@@ -1,0 +1,218 @@
+<html>
+<head>
+<title>Mumbai</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="images/favicon.png" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+
+<script>
+function initialize()
+{
+  var mapProp = {
+    center: new google.maps.LatLng(18.5830,72.4933),
+    zoom:7,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+function loadScript()
+{
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;
+</script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="index.php"> Mumbai</a><small> Know more about</small></h1>
+      </div>
+
+      <div class="menu_nav">
+       <ul>
+        <li class="active"><a href="index.php">Home<br />
+<span>home page</span></a></li>
+       <li><a href="contact.php">Contact Us<br />
+<span>Call me now</span></a></li><li>
+          
+         
+          <li><a href=""">
+		  <?php     
+         session_start();
+         $name=$_SESSION['name'];     
+         echo'Welcome  '. $name.'<br><span>Explore</span>';
+		 echo'<a href="signout.php">Signout<br><span>Thank You</span></a>';
+         ?></a>
+		</li>
+      </ul>     
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+      <div class="header_img"><img src="images/main_img.jpg" alt="image" width="1349" height="320" /></div>
+      <div class="menu_nav1">
+       <ul>
+	   <li class="active"><a href="index.php">Home<br />
+								<span>home page</span></a></li>
+        <li><a href="gateway.php">Gateway<br />
+								<span>Of India</span></a></li>
+		
+		<li><a href="siddhivinayak.php">Siddhivinayak <br />
+								<span>Temple</span></a></li> 
+		<li><a href="marine.php">Marine<br />
+								<span>Lines</span></a></li> 
+		<li><a href="elephanta.php">Elephanta <br />
+								<span>Caves</span></a></li>
+        <li><a href="sealink.php">Bandra-Worli<br />
+								<span>Sea Link</span></a></li>
+        <li><a href="mary.php">Mount Mary<br />
+								<span>Church</span></a></li>
+        <li><a href="cst.php">Chhtatrapati Shivaji<br />
+								<span>Terminus</span></a></li>
+        <li><a href="adlabs.php" class="last">Adlabs<br />
+								<span>Imagica</span></a></li>
+		<li><a href="pagoda.php" class="last">Pagoda<br />
+								<span>Temple</span></a></li>
+		<li><a href="kanheri.php" class="last">kanheri<br />
+								<span>Caves</span></a></li>
+		<li><a href="essel.php" class="last">Essel World<br />
+								<span>Water kingdom</span></a></li>
+      </ul>     
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+          <div class="article">
+          <h2><u>Mumbai .The Commercial capital of India...</u></h2>
+          <div class="clr"></div>
+         
+          <div class="clr"></div>
+					<p>"Mumbai, earlier known as Bombay, is the capital of Maharashtra and the largest city of India. Mumbai initially was the accumulation of seven islands on the Konkan coastline, which with the passage of time joined to form island city of Bombay. It further joined Salsette islands in the neighbourhood to form Greater Bombay. Bombay got its name from Bom Bahia, meaning "Beautiful Bay", given by a Portuguese. This was later popularised as Bombay state by the British. Current name of Bombay is Mumbai. More so, many say that Mumbai happens to be its original name, which is derived from "Mumba", a local Hindu Goddess "Mumbadevi", and "Aai", means "mother" in Marathi. However, its name was on the records changed from Bombay to Mumbai in 1995.</p>
+
+					<p>Mumbai undeniably is the business capital of India and one of the major port cities in the country. Mumbai has a diverse nature and multi-cultural lifestyle. On one hand, this city is the hometown of Bollywood, and on the other, this city has India's largest slum population. With the huge inflow of migrants, this city welcomes all with open arms. The city developed its identity from these communities that are settled in here. The culture here is a fine amalgamation of festivities, religions, music, food, music and theatres. Mumbai is said to have most active nightlife in comparison to other cities.</p>
+
+					<p>This city celebrates the festivals of every religion with grandeur and fervour. The popular festivals celebrated in Mumbai are Diwali, Holi, Eid, Christmas, Navratri, Good Friday, Dussehra, Moharram, Ganesh Chaturthi, Durga Puja and Maha Shivratri. Fairs and fests add on to the glitter of the city; Kala Ghoda Arts Festival is an exhibition that displays works of various renowned artists in the fields of music, dance, theatre, and films. Also, Bandra fair is an annual fair that begins on the next Sunday after September 8 each year. This festival commemorates the nativity of Mother Mary on September 8. This city has a lot to offer in terms of attractions, for those who want to explore this vividly colourful place.</p>
+          
+        </div>
+        <div class="article">
+          <h2><span>Mumbai: </span>The city that has it all</h2>
+          
+          <div id="googleMap" style="width:750px;height:250px;border:10px"></div>
+          <div class="clr"></div>
+          <p>Mumbai is big. It’s full of dreamers and hard-labourers, actors and gangsters, stray dogs and exotic birds, artists and servants and fisherfolk and crorepatis (millionaires). It has the most prolific of film industries, one of Asia’s biggest slums and the largest tropical forest in an urban zone. It’s India’s financial powerhouse, fashion capital and a pulse point of religious tension. It’s evolved its own language, Bambaiyya Hindi, which is a mix of…everything. It has some of the world’s most expensive real estate and a knack for creating land from water using only determination and garbage. But wait. Mumbai is not frantic, it’s not overwhelming. Or at least, it doesn’t have to be.</p>
+<p>Contrary to what you might think, you may not have almost just died in that taxi or been rushed by that station crowd or run over by that guy with the funny outfit and the monkey. The city has its own rhythm, which takes a little while to hear: it’s a complex but playful raga, a gliding, light-footed dance that all of Mumbai seems to know.</p>
+
+<p>The one time of year Mumbai could be coined intense is during Divali (Festival of the Lights).  Whether you follow Rama or one of the other 330 million Hindu deities, the Festival of Lights is a time for positivity and joy. Coming at the end of the harvest season, it’s a period of relative prosperity for the poor country and feels like the subcontinent’s version of Christmas. Watch out for the firecrackers thrown by children in the street; one safer display takes place on Mumbai’s Chowpatty Beach.</p>
+
+<p>If you’re bonkers for Bollywood, you’ve come to the right place to experience your 15 minutes of fame. Mumbai is the glittering epicentre of India’s gargantuan Hindi-language film industry, and they’re often looking for Western extras.</p>
+
+<p>The industry churns out more than 900 films a year – more than any other industry (yes, Hollywood included). Not surprising considering they have one-sixth of the world’s population as a captive audience, as well as a sizable Non-Resident Indian (NRI) following.</p>
+
+<p>Every part of India has its regional film industry, but Bollywood continues to entrance the nation with its winning escapist formula of masala entertainment – where all-singing, all-dancing lovers fight and conquer the forces keeping them apart. These days, Hollywood-inspired thrillers and action extravaganzas vie for moviegoers’ attention alongside the more family-oriented saccharine formulas.</p>
+        </div>
+       
+      </div>
+      <div class="sidebar">
+     
+
+        <div class="gadget">
+          <h2>Menu</h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="index.php"><b>Home</b></a></li>
+            <li><a href="lifeline.php">Mumbai's Lifeline</a></li>
+            <li><a href="food.php">Tour to Food</a></li>
+            <li><a href="hotels.php">Hotels to Stay</a></li>
+           
+         
+          </ul>
+        </div>
+        <div class="gadget">
+          <h2><span>Info:</span></h2>
+          <div class="clr"></div>
+          <ul class="ex_menu">
+            <li>Country:	 India<br>
+State:	Maharashtra<br>
+District:	Mumbai City<br>
+Former name:	Bombay<br>
+Official Language:	Marathi<br>
+First settled:	1507<br>
+Named for:	Mumbadevi<br>
+
+Area:<br>
+ • Metropolis: 603 km2<br>
+ • Metro:	4,355[3][4] km<br>
+Elevation: 14 m (46 ft)<br>
+Population (2011):<br>
+ • Metropolis :12,478,447<br>
+ • Rank:	1st<br>
+ • Density:	21,000/km<br>
+ • Urban:	18,414,288 (1st)<br>
+ • Metro:    20,748,395<br>
+Demonym:Mumbaikar<br>
+Time zone:IST (UTC+5:30)<br>
+ZIP code(s):400 001 to 400 107<br>
+Area code(s):+91-22<br>
+Vehicle registration:MH- 01,02,03,47<br></li>
+            
+          </ul>
+        </div>
+        <div class="gadget">
+          <h3><u>Thought of the Day:</u></h3>
+          <div class="clr"></div>
+          <p>   <img src="images/test_1.gif" alt="image" width="19" height="20" /> <em>“I found Bombay and opium, the drug and the city, the city of opium and the drug Bombay” 
+</em>.<img src="images/test_2.gif" alt="image" width="19" height="20" /></p>
+          <p style="float:right;"><strong>― Jeet Thayil, Narcopolis</strong></p>
+          </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <h2><span>Image Gallery</span></h2>
+        <a href="#"><img src="images/gallery_1.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_2.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_3.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_4.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_5.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_6.jpg" width="58" height="58" alt="pix" /></a> </div>
+      <div class="col c2">
+        <!-- Facebook -->
+<a href="http://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook" id="Facebook"/></a>
+ 
+<!-- Twitter -->
+<a href="http://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter" id="Twitter"/></a>
+ 
+<!-- Google+ -->
+<a href="https://plus.google.com" target="_blank"><img src="images/google.png" alt="Google" id="Google"/></a>
+ 
+        <p><br />
+          </p>
+      </div>
+      <div class="col c3">
+        <h2><span>Contact</span></h2>
+        <p>Hello. I'm Manish Sunil Patil. <br>Currently studying Engineering in Mumbai University.<br>Ramrao adik Institute of Technology[Nerul].<br><a href="#">manishpatilandroid@gmail.com</a><br>
+          <a href="#">+91 9619702248</a></p>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="footer">
+      <p class="lr"> Copyright @<a href="#">MANISH</a>.</p>
+      <p class="lf">Layout by <a href="#">MANISH</a>.</p>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
